@@ -20,9 +20,14 @@ public class Bubble {
     }
 
     public static void main(String[] args) {
+        long startTime = System.currentTimeMillis();
+
         int[] arr = {0, 2, 1, 4, 3, 9, 7, 5, 8, 6};
         bubbleSort(arr);
 
+        long endTime = System.currentTimeMillis();
+
         System.out.println(Arrays.toString(arr));
+        System.out.println(endTime - startTime);
     }
 }

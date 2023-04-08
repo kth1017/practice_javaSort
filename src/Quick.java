@@ -28,11 +28,19 @@ public class Quick {
         }
     }
     public static void main(String[] args) {
+
+        long startTime = System.currentTimeMillis();
+
         int n = 10;
         int[] arr = {0, 2, 1, 4, 3, 9, 7, 5, 8, 6};
         quickSort(arr, 0, n-1);
 
+        long endTime = System.currentTimeMillis();
+
         System.out.println(Arrays.toString(arr));
+        System.out.println(endTime - startTime);
+
+
 
     }
 }

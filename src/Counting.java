@@ -23,8 +23,13 @@ public class Counting {
     }
 
     public static void main(String args[]) {
+        long startTime = System.currentTimeMillis();
+
         int arr[] = {0, 3, 8, 9, 5, 7, 4, 1, 2, 6, 5, 8};
 
+        long endTime = System.currentTimeMillis();
+
         System.out.println(Arrays.toString(countingSort(arr)));
+        System.out.println(endTime - startTime);
     }
 }
